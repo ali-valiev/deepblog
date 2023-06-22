@@ -1,0 +1,25 @@
+label {
+  font-family: poppins, sans-serif;
+  font-size: 23px;
+  padding: 3px 10px;
+}
+
+input,
+textarea {
+  border-color: #488b8f;
+  border-radius: 3px;
+  border-width: 1px;
+  margin-left: 10px;
+}
+
+input {
+  width: 90%;
+  height: 35px;
+  font-size: 1.3em;
+}
+
+textarea {
+  width: 97%;
+  height: auto;
+  font-size: 1.2em;
+}

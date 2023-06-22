@@ -1,0 +1,14 @@
+/* .blog-body-container {
+  width: 100%;
+  
+}
+
+.blog-body {
+  display: grid;
+  grid-template-columns: auto;
+  white-space: nowrap;
+} */
+
+span {
+  overflow-x: scroll;
+}

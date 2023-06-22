@@ -1,0 +1,38 @@
+.blog {
+  border: black 3px solid;
+  border-radius: 5px;
+  margin: 5px;
+  margin-top: 10px;
+  padding: 10px;
+  box-shadow: 4px 4px;
+}
+
+.blog:hover {
+  margin: 1px;
+  /* box-shadow: 4px 7px; */
+}
+
+.blog-title {
+  font-family: poppins, sans-serif;
+  font-weight: 600;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.blog-author-date {
+  font-family: "Inconsolata", monospace;
+  padding-left: 0;
+}
+
+.blog-body {
+  padding-top: 3px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
