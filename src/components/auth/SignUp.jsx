@@ -1,7 +1,8 @@
 import { useState } from "react";
-import { auth } from "./firebase-config";
+import { auth } from "../../firebase-config";
 import { createUserWithEmailAndPassword } from "firebase/auth";
 import { useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 import "../../styles/auth.css";
 
 const SignUp = () => {
@@ -47,6 +48,9 @@ const SignUp = () => {
         <br />
         <button type="submit">Sign Up</button>
       </form>
+      <center>
+        Already have an account? Then <Link to="/signin">Sign In</Link>!
+      </center>
       <div className="error-box">{errMessage}</div>
     </div>
   );

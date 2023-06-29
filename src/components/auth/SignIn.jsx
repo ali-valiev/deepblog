@@ -1,7 +1,8 @@
 import { useState } from "react";
-import { auth } from "./firebase-config";
+import { auth } from "../../firebase-config";
 import { signInWithEmailAndPassword } from "firebase/auth";
 import "../../styles/auth.css";
+import { Link, redirect } from "react-router-dom";
 
 const SignIn = () => {
   const [email, setEmail] = useState("");
@@ -10,8 +11,8 @@ const SignIn = () => {
   const signIn = (e) => {
     e.preventDefault();
     signInWithEmailAndPassword(auth, email, pass)
-      .then((userCredentials) => {
-        console.log(userCredentials);
+      .then(() => {
+        return redirect("/");
       })
       .catch((err) => {
         console.log(err);
@@ -38,9 +39,11 @@ const SignIn = () => {
             setPass(event.target.value);
           }}
         />
-        <br />
         <button type="submit">Sign In</button>
       </form>
+      <center>
+        Dont have an account? Just <Link to="/signup">Sign Up</Link>!
+      </center>
     </div>
   );
 };

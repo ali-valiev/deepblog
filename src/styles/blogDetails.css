@@ -1,14 +1,9 @@
-/* .blog-body-container {
-  width: 100%;
-  
+.blog-body-container {
+  width: 100vh;
+  word-wrap: break-word;
+  font-family: "Roboto";
 }
 
-.blog-body {
-  display: grid;
-  grid-template-columns: auto;
-  white-space: nowrap;
-} */
-
-span {
-  overflow-x: scroll;
+.blog-details {
+  padding: 10px;
 }

@@ -17,7 +17,7 @@
   font-weight: 600;
   overflow: hidden;
   white-space: nowrap;
-  text-overflow: ellipsis;
+  text-overflow: clip;
 }
 
 .blog-author-date {
@@ -25,7 +25,7 @@
   padding-left: 0;
 }
 
-.blog-body {
+.main-blog-body {
   padding-top: 3px;
   overflow: hidden;
   white-space: nowrap;

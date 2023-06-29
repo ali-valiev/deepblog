@@ -2,6 +2,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
   width: 20rem;
   height: 20rem;
   background-color: #232323;
@@ -50,4 +51,16 @@ button {
   border-radius: 5px;
   background-color: white;
   color: #232323;
+}
+
+center {
+  position: absolute;
+  bottom: 9px;
+  font-size: 15px;
+  font-family: poppins, sans-serif;
+  color: white;
+}
+
+center a {
+  color: lightseagreen;
 }

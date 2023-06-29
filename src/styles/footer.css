@@ -11,6 +11,7 @@ footer {
   font-size: 17px;
   font-family: poppins, sans-serif;
   color: white;
+  z-index: 100;
 }
 
 span {

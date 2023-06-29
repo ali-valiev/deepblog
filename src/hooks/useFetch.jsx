@@ -1,9 +1,9 @@
 import { useState, useEffect } from "react";
 
 const useFetch = (url) => {
-  const [data, setData] = useState(null);
-  const [loading, setLoading] = useState(true);
-  const [error, setError] = useState(null);
+  const [data, setData] = useState();
+  const [loading, setLoading] = useState();
+  const [error, setError] = useState();
   useEffect(() => {
     fetch(url)
       .then((res) => {
@@ -19,6 +19,7 @@ const useFetch = (url) => {
       })
       .catch((err) => {
         setError(err.message);
+        console.log(error.message);
         setLoading(false);
       });
   }, []);

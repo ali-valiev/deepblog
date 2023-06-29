@@ -9,18 +9,20 @@ const BlogDetails = () => {
     data: blog,
     loading,
     error,
-  } = useFetch(import.meta.env.VITE_HOST + "/blogs/" + id);
+  } = useFetch(import.meta.env.VITE_HOST + `/blogs/${id}`);
   return (
     <>
       {loading && <Loader />}
       {error && { error }}
       {blog && (
         <div className="blog-details">
-          <h2 className="blog-title">{blog.title}</h2>
+          <h2 className="blog-title">{blog[0].title}</h2>
           <p className="blog-author-date">
-            {blog.author} on {blog.date}
+            By {blog[0].author} on {blog[0].date}
           </p>
-          <span className="blog-body">{blog.body}</span>
+          <div className="blog-body-container">
+            <p className="blog-body">{blog[0].body}</p>
+          </div>
         </div>
       )}
     </>

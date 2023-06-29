@@ -1,15 +1,10 @@
-label {
-  font-family: poppins, sans-serif;
-  font-size: 23px;
-  padding: 3px 10px;
-}
-
 input,
 textarea {
   border-color: #488b8f;
   border-radius: 3px;
   border-width: 1px;
   margin-left: 10px;
+  max-width: 90vw;
 }
 
 input {
